@@ -63,14 +63,31 @@
         <label for="telefono">Numero de telefono:</label>
         <input type="tel" name="telefono" id="" placeholder="+52 123 4567 890">
         <br><br>
-        <!--Lista desplegable-->
-        <label for="pais">Pais:</label>
-        <select name="pais" id="">
-            <option value="espana">España</option>
-            <option value="mexico">Mexico</option>
-            <option value="alemania">Alemania</option>
+       
+        <!-- Lista desplegable Continente -->
+        <label for="continente">Pais:</label>
+        <select name="continente" id="continente">
+            <option value="">Seleccione un Pais</option>
+            <option value="america">México</option>
+            <option value="europa">Italia</option>
+            <option value="asia">China</option>
+            <option value="africa">Argentina</option>
+            <option value="oceania">Venezuela</option>
         </select>
         <br><br>
+
+        <!-- Lista desplegable País (dependiente del continente seleccionado) -->
+        <label for="pais">País:</label>
+        <select name="pais" id="pais">
+            <option value="">Seleccione primero un continente</option>
+        </select>
+        <br><br>
+
+        <!-- El resto de los campos siguen igual... -->
+    
+
+    <script src="script.js"></script>
+
         <!--Casillas de Verificacion (Checkbox)-->
         <label for="idiomas">¿Idiomas que hablas?:</label><br>
         <blockquote>
